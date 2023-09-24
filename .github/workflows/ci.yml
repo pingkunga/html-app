@@ -5,10 +5,8 @@ on:
     branches:
       - main
   pull_request:
-    types:
-      - opened
-    branches: 
-      - '*feature'
+    branches:
+      - main
 
 jobs:
     build-job:
