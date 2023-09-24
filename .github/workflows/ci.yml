@@ -7,11 +7,13 @@ on:
   pull_request:
     branches:
       - main
-
+env:
+  MY_HOST: https://github.com
 jobs:
     build-job:
       runs-on: ubuntu-latest
       steps:
+        - run: echo "My Host is ${{ env.MY_HOST }}"
         - run: echo "build-job ${{ github.repository }} by ${{ github.actor }}"
     
     test-job:
