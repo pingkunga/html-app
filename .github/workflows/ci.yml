@@ -1,0 +1,19 @@
+name: GitHub Actions Demo
+
+on: 
+  push:
+    branches:
+      - main
+  pull_request:
+    types:
+      - opened
+    branches: 
+      - '*feature'
+
+jobs:
+    build-job:
+      runs-on: ubuntu-latest
+      steps:
+        - run: echo "Hello World"
+        - run: echo "Hello World 2"
+        - run: echo "Hello World 3"
