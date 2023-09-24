@@ -31,3 +31,4 @@ jobs:
       needs: test-job
       steps:
         - run: echo "deploy-job ${{ job.status }}"
+        - run: echo "secret not show ${{ secrets.MSSQL_PASSWORD }}"
