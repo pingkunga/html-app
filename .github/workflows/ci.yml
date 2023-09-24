@@ -15,7 +15,7 @@ jobs:
       env:
         MY_SCOPE: "build"
       steps:
-        - run: echo "My Host is ${{ env.MY_HOST }} at $MY_SCOPE"
+        - run: echo "My Host is ${{ env.MY_HOST }} at ${{env.MY_SCOPE}}"
         - run: echo "build-job ${{ github.repository }} by ${{ github.actor }} at $MY_SCOPE"
     
     test-job:
