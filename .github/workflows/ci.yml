@@ -12,7 +12,7 @@ jobs:
     build-job:
       runs-on: ubuntu-latest
       steps:
-        - run: echo "build-job ${{ github.repository}}"
+        - run: echo "build-job ${{ github.repository }} by ${{ github.actor }}"
     
     test-job:
       runs-on: ubuntu-latest
